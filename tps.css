@@ -1,0 +1,192 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+ }   
+ html,
+ body{
+    width: 100%;
+    height: 100%;
+ }
+ button{
+  border: none;
+  background-color: transparent;
+  background: none;
+  
+ }
+ .knapp{
+   display: block;
+   padding-top: 15pt;
+   width: 50pt;
+   height: 50pt;
+   background-image: url(Asset1.png);
+   background-size: cover;
+ }
+
+ .side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* menyen er gjemt ute av synet når man ikke har trykket på meny knappen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease; /* en naturlig og glatt overgang */
+  z-index: 999;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 10px;
+}
+
+.side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menuButton {
+  position: fixed;
+  top: 20px;
+  left: 140px;
+  z-index: 1000;
+}
+
+#darkModeButton {
+   padding: 8px 12px;
+   background-color: #555;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ #darkModeButton:hover {
+   background-color: #444;
+ }
+
+.dark-mode {
+   background-color: #111;
+   color: darkgray;
+
+ }
+
+ h1{
+   text-align: center;
+   font-size: 40pt;
+   font-family: Oswald;
+}
+html,
+body{
+  background-color: darkgray;
+  color: darkred;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dark-mode body {
+  color: darkgray;
+}
+
+.oppdeling{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.knapp1{
+  position: relative; /* bestemmer bildets posisjon */
+  border: 2px solid black;
+  width: 200px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  background-color: darkred;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: lightgray;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.knapp1 img {
+  width: 100%; /* passer på at bredden er 100% */
+  height: auto;
+  max-height: 100%; /* passer på at den maksimale høyden ikke blir mer enn bredden */
+  object-fit: cover;
+}
+
+.dark-mode .knapp1{
+  background-color: darkgray;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+.knapp2{
+  position: relative; 
+  border: 2px solid black;
+  width: 200px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  background-color: darkred;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: lightgray;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.knapp2 img {
+  width: 100%; /* passer på at bredden er 100% */
+  height: auto;
+  max-height: 100%; /* passer på at den maksimale høyden ikke blir mer enn bredden */
+  object-fit: cover;
+}
+
+.dark-mode .knapp2{
+  background-color: darkgray;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+.knapp3{
+  position: relative; 
+  border: 2px solid black;
+  width: 200px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  background-color: darkred;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: lightgray;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.knapp3 img {
+  width: 100%; /* passer på at bredden er 100% */
+  height: auto;
+  max-height: 100%; /* passer på at den maksimale høyden ikke blir mer enn bredden */
+  object-fit: cover;
+}
+
+.dark-mode .knapp3{
+  background-color: darkgray;
+  color: darkred;
+  border: 2px solid darkred;
+}

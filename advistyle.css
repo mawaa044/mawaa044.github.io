@@ -1,0 +1,101 @@
+.knapp{
+    display: block;
+    padding-top: 15pt;
+    width: 50pt;
+    height: 50pt;
+    background-image: url(Asset1.png);
+    background-size: cover;
+  }
+ 
+  .side-menu {
+   position: fixed;
+   top: 0;
+   left: -250px; /* menyen er gjemt ute av synet når man ikke har trykket på meny knappen */
+   width: 250px;
+   height: 100%;
+   background-color: #333;
+   transition: left 0.3s ease; /* en naturlig og glatt overgang */
+   z-index: 999;
+ }
+ 
+ .side-menu ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .side-menu ul li {
+   padding: 10px;
+ }
+ 
+ .side-menu ul li a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ #menuButton {
+   position: fixed;
+   top: 20px;
+   left: 140px;
+   z-index: 1000;
+ }
+ 
+ #darkModeButton {
+    padding: 8px 12px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #darkModeButton:hover {
+    background-color: #444;
+  }
+ 
+ .dark-mode {
+    background-color: #111;
+    color: darkgray;
+  }
+
+  button{
+    border: none;
+    background-color: transparent;
+    background: none;}
+
+    h1{
+        text-align: center;
+        font-size: 40pt;
+        font-family: Oswald;
+     }
+
+     body{
+        background-color: darkgray;
+        color: darkred;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+  .paragraph{
+   position: relative;
+  border: 2px solid black;
+  max-width: 100%;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: darkred;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: lightgray;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .dark-mode .paragraph{
+    background-color: darkgray;
+    color: darkred;
+    border: 2px solid darkred;
+  }
+

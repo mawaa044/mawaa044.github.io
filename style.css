@@ -1,0 +1,168 @@
+ h1{
+    text-align: center;
+    font-size: 60pt;
+    font-family: Oswald;
+    color: darkgray;
+ }
+
+ .boks{
+    background-color: darkgray;
+    border: 2px solid black;
+    padding: 5pt;
+    text-align: center;
+    font-size: xx-large;
+   }
+
+   .dark-mode .boks{
+      background-color: darkred;
+      color: lightgray;
+      border: 2px solid darkgray;
+   }
+
+   .oppdeling{
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .podkastKnapp{
+      border: 1px solid black;
+      width: 200px;
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      border-radius: 1rem;
+      /* display: block; */
+      background-color: darkgray;
+      text-align: center;
+      font-size: 2rem;
+      text-decoration: none;
+      color: darkred;
+   }
+
+   .dark-mode .podkastKnapp{
+      background-color: darkred;
+      color: lightgray;
+      border: 1px solid darkgray;
+   }
+
+   .tips{
+      border: 1px solid black;
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      border-radius: 1rem;
+      /* display: block; */
+      background-color: darkgray;
+      text-align: center;
+      font-size: 2rem;
+      text-decoration: none;
+      width: 200px;
+      color: darkred;
+   }
+
+   .dark-mode .tips{
+      background-color: darkred;
+      color: lightgray;
+      border: 1px solid darkgray;
+   }
+    
+   html,
+   body{
+      width: 100%;
+      height: 100%;
+      background-color: darkred;
+      flex-direction: column;
+      justify-content: center;
+      color: darkred;
+   }
+   *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font: inherit;
+   } 
+
+   button{
+      border: none;
+      background-color: transparent;
+      background: none;
+     }
+
+   .knapp{
+      display: block;
+      padding-top: 15pt;
+      width: 50pt;
+      height: 50pt;
+      background-image: url(Asset3.png);
+      background-size: cover;
+    }
+    .side-menu {
+     position: fixed;
+     top: 0;
+     left: -250px; /* menyen er gjemt ute av synet når man ikke har trykket på meny knappen */
+     width: 250px;
+     height: 100%;
+     background-color: #333;
+     transition: left 0.3s ease; /* en naturlig og glatt overgang */
+     z-index: 999;
+   }
+   
+   .side-menu ul {
+     list-style: none;
+     padding: 0;
+   }
+   
+   .side-menu ul li {
+     padding: 10px;
+   }
+   
+   .side-menu ul li a {
+     color: #fff;
+     text-decoration: none;
+   }
+   
+   #menuButton {
+     position: fixed;
+     top: 20px;
+     left: 140px;
+     z-index: 1000;
+   }
+   
+   /* dark mode knapp stiler */
+   #darkModeButton {
+      padding: 8px 12px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #darkModeButton:hover {
+      background-color: #444;
+    }
+   
+    /* Dark mode utseende */
+   .dark-mode {
+      background-color: #111;
+      color: darkgray;
+    }
+    
+   
+    h1{
+      text-align: center;
+      font-size: 40pt;
+      font-family: Oswald;
+      color: darkgray;
+   }
+
+   .dark-mode h1{
+      color: lightgray;
+   }
+
+   .dark-mode body{
+      color: lightgray;
+   }
+
+   .image-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
